@@ -1,0 +1,38 @@
+###
+
+GET http://localhost:8000/ok
+
+###
+
+GET http://localhost:8000/api/books
+
+###
+
+GET http://localhost:8000/api/books/1
+
+###
+
+POST http://localhost:8000/api/book
+Content-Type: application/json
+
+{
+    "id": 10,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "year":1866
+}
+
+###
+
+PUT http://localhost:8000/api/books/1
+Content-Type: application/json
+
+{
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "year": 1951
+}
+
+###
+
+DELETE http://localhost:8000/api/book/1
